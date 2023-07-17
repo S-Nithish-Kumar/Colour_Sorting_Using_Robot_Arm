@@ -5,8 +5,8 @@
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#3-impact-of-solving-the-problem">Impact of Solving the Problem</a></li>
      <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#4-proposed-approach">Proposed Approach</a></li>
      <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#5-data-collection-and-preprocessing">Data Collection and Preprocessing</a></li>
-   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#6-model-training"Model Training"</a></li>
-  <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#7-model-testing-and-validation>"Model Testing and Validation"</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#6-model-training">Model Training</a></li>
+  <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#7-model-testing-and-validation">Model Testing and Validation</a></li>
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#8-implementation">Implementation</a></li>
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#9-testing-and-validation">Testing and Validation</a></li>
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#9-problems-and-troubleshooting">Problems and Troubleshooting</a></li>
