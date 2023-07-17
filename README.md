@@ -1,78 +1,107 @@
 ## Contents:
-1. [Problem Statement](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#1-problem-statement)
-2. [Objectives](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#2-objectives)
-3. [Pose Estimation Model](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#3-pose-estimation-model)
-4. [Process Flow](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#4-process-flow)
-5. [Data Collection](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#5-data-collection)
-6. [Data Visualization and Preprocessing](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#6-data-visualization-and-preprocessing)
-7. [Model Training and Results](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#7-model-training-and-results)
-8. [Output](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#8-output)
-9. [Problems and Troubleshooting](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#9-problems-and-troubleshooting)
-10. [Conclusion](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#10-conclusion)
-11. [References](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#11-references)
+<ol>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#1-problem-statement">Problem Statement</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#2-objectives">Objectives</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#3-impact-of-solving-the-problem">Impact of Solving the Problem</a></li>
+     <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#4-proposed-approach">Proposed Approach</a></li>
+     <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#5-data-collection-and-preprocessing">Data Collection and Preprocessing</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#6-model-training"Model Training"</a></li>
+  <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#7-model-testing-and-validation>"Model Testing and Validation"</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#8-implementation">Implementation</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#9-testing-and-validation">Testing and Validation</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#9-problems-and-troubleshooting">Problems and Troubleshooting</a></li>
+   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#10-results-and-conclusion">Results and Conclusion</a></li>
+   <li><a href="https://s-nithish-kumar.github.ioColour_Sorting_with_Robot_Arm_using_Deep_Learning/11-references">References</a></li>
+</ol>
 
 ### 1. Problem Statement:
-- Advanced security measures at airport borders and prisons are crucial due to the persistent threat posed by potential intruders.
-+ It will be very helpful for supervisors and security guards if some intelligent system helps them with surveillance.
+- Segregation of objects is a time consuming process and a mundane job.
++ In particular, Humans involved in waste segregation are exposed to harmful chemicals, which can lead to respiratory issues.
 
 ### 2. Objectives:
-- Use an existing pose estimation algorithm to collect data points that can be used for training a Deep Learning model.
-+ Visualize and preprocess the collected data points and train an Artificial Neural Network model to classify different poses such as Normal, Squat, Crawl, and Climb.
-+ Based on the classification, send the signal to a microprocessor to turn on an alarm or notify authorities through a message.
+- Develop a color sorting system using a robot arm and classify the colors using a deep learning model.
++ This project acts as a base that can be modified for the segregation of other objects, especially waste, by training a Deep Learning model accordingly using a specific dataset.
 
-### 3. Pose Estimation Model:
-- MediaPipe is a Python package that consists of many pre-trained models.
-+ BlazePose is one such model in MediaPipe for human pose estimation, specifically designed for applications like exercise, yoga, etc.
-+ BlazePose outputs 33 key points along with two virtual key points (one at the human body center and another at the circumference of the circle).
-+ The picture below shows the key points corresponding to the body parts.
+### 3. Impact of Solving the Problem:
+- Waste management involves the sight and smell of waste and working for extended periods under challenging conditions, which might lead to psychological problems contributing to stress, depression, and other mental health issues. Replacing humans with robots for such tasks can help overcome these problems.
++ Harmful chemicals affect humans and can cause respiratory problems, but robots are not affected by these chemicals.
++ Humans can work only for a limited duration, whereas robots can work 24/7 and perform more efficiently than humans.
+
+### 4. Proposed approach:
+The picture below shows the conceptual design of the project. Waste products placed on the conveyor belt move slowly. Multiple robots can be placed based on the quantity of waste that has to be segregated. For each robot, there will be a camera that classifies the type of waste. Once classified, the robot will pick up the waste and dispose of it in the appropriate trash can.
+
 <p align="center">
-<img src="images/pose_landmarks.jpg" height="110%" width="110%">
+<img src="images/conceptual_design.jpg" height="40%" width="40%">
 </p>
-<p align="center">Figure 1 Pose landmarks of the BlazePose model</p>
 
+### 5. Data Collection and Preprocessing:
+- Data is collected using a custom Python code that collects images of size 224 x 224 pixels.
+- A total of 900 images were collected for three classes, with 300 images for each of the classes. For each category, 100 images were collected for testing and validation.
 
-### 4. Process Flow:
-- Figure 2 shows the block diagram of the overall working of the project. The input image is taken from the integrated webcam of the laptop and has a size of 640 by 480 pixels.
-- The image is given to the BlazePose model to obtain the key points of the human body present in the image. The key points are then fed into the trained ANN model, which outputs the pose (one of the four classes—normal, climb, crawl, squat).
-- The output pose, thus obtained, is sent to a microcontroller, which is programmed to turn on LEDs and a buzzer when the pose is anomalous.
-- Figure 3 shows the sequence flow diagram of the process. In Step 1, the input is obtained from the integrated web of the laptop and passed to the BlazePose model to check the detection confidence.
-- If detection confidence is above the threshold, landmarks (key points) will be returned by the BlazePose model. The key points are sent to a deep Learning model to identify the pose.
-- After the pose is found, it will be displayed on the monitor, and a signal will be sent to the Arduino microcontroller. Upon detection of anomalous activity, the buzzer connected to the controller will turn on.
+<p align="center">
+<img src="images/categories.JPG" height="40%" width="40%">
+</p>
 
-### 5. Data Collection:
-Key points from the BlazePose model are stored in a .csv file. Key points are collected for a total of four poses. Normal with labels as ‘n’; climb, squat, crawl with ‘c’, ‘q’, and "r, respectively, as labels. More details on data collection are available in the conference paper.
+<p align="center">
+<img src="images/isometric_view.jpg" height="40%" width="40%">
+</p>
 
-### 6. Data Visualization and Preprocessing:
-- The collected data is visualized using correlation plots, box plots, and scatter plots.
-- Using the Correlation plot, the correlation between key points and poses is identified. It has been found that only a few key points are highly correlated with the poses.
-- All those highly correlated key points are visualized using box plots to find the outliers and are removed to ensure proper training of the model.
-- Scatter plots are used to plot the key points of all the poses to visualize how well the poses are differentiated from each other.
-- More information on data visualization and preprocessing is available in the conference paper.
+- Noisy and distorted images were removed, and all the images were renamed using numbers in an orderly fashion.
+- The dataset is generated using the Tensorflow ImageDataGenerator for both the training and validation sets. The images are normalized with a rescale value of 1/255, and the fill_mode is set to nearest, which fills the boundaries outside the input using the boundary pixel values of the image. Other parameters of ImageDataGenerator are not modified so that the images are not highly augmented.
 
-### 7. Model Traning and Results:
-- After data preprocessing, a three-layer deep learning ANN model is trained. The training accuracy is 94.63%, and the test data accuracy is 94.51%.
-- The graph projecting the accuracy of the model for each epoch is shown in Figure 4. The accuracy of both the training and test datasets is almost similar since there is not much difference between the data points.
+### 6. Model Training and Validation:
+- A Deep Learning Architecture with four convolution layers each, followed by a MaxPool layer, two dense layers each with a dropout layer, and finally an output layer with three nodes is created.
+- The output layer uses the Softmax activation function, and the other layers use the ReLu (Rectified Linear Unit) activation function.
+- Adaptive Moment Estimation is used for optimization, and categorical cross entropy is used for computing the cost of the model.
+- The model is trained with the training and validation images generated using the Tensorflow ImageDataGenerator.
++ The model of the weights is saved after each epoch, and the weights with the best accuracy are used for deployment.
++ The model started to overfit in the fourth epoch and was eliminated for deployment. In the third epoch, the model's accuracy with the training set is 98.33 percent, and the validation set is 96 percent, which is used for deployment.
 
-### 8. Output:
-The model has been tested with real-time inputs. Figure 5 shows the output of the model for different poses. The output from the model is sent to the Arduino microcontroller, which turns on three LEDs sequentially with a delay of 1 second after the anomalous activity is detected. Even after 3 seconds, if anomalous activity is detected, the fourth LED glows (shown in Figure 5), which confirms the anomalous activity. Instead of the fourth LED, a buzzer could be replaced.
+<p align="center">
+<img src="images/training_and_validation_accuracy.png" height="40%" width="40%">
+</p>
+
+### 7. Model Testing and Validation:
+- The model is evaluated using the validation set generated using Tensorflow ImageDataGenerator and the test set, which is a raw version of the validation set.
+
+<p align="center">
+<img src="images/validation_set_confusion_matrix.JPG" height="40%" width="40%">
+</p>
+
+<p align="center">
+<img src="images/test_set_confusion_matrix.JPG" height="40%" width="40%">
+</p>
+
+- Clearly, from the confusion matrices, the test set is found to have better results compared to its slighted augmented version (validation set), and this is attributed to the size of the dataset being small.
+
+### 8. Implementation:
+
+<p align="center">
+<img src="images/circuit_diagram.png" height="40%" width="40%">
+</p>
+
+- Circuit connections are given as per the diagram shown above. Potentiometers are used for controlling the servo motors to find the position values of the servo motors, which will be used for automating the robot.
+- A 9V battery is connected to two terminals of the potentiometer, and the center pin of the potentiometers is connected to the Analog pins of the Arduino to read the voltage values that are used for controlling the servo motors.
+- The servo motors are connected to the PCA 9685 Servo motor driver. The motor driver is connected to a power supply of 5V and 2A to power up the servo motors. The board itself is powered by connecting the Vin to the 5V pin in the Arduino. The Arduino is connected to the USB port of the PC to power it up and also to view the potentiometer values on the serial monitor.
+- The Arduino sends signals to the motor driver through the I2C communication protocol, and green lines show the connection of the SDA and SCL pins of both boards.
+- With the appropriate servo motor position values found using potentiometers, an Arduino code is developed to grab and place an object from the home position.
+- A Python code is developed to turn on the camera and classify the background and objects using the trained deep learning model. Once classified, an encoded output is sent to the Arduino using the Serial library in Python.
+- After the Arduino receives the Serial data, based on the if conditions, the grab is picked and placed in the appropriate location.
 
 ### 9. Problems and Troubleshooting:
-- The trained ANN model has limitations in terms of detection distance and camera position. The model performs well till a distance of 15 feet from the camera.
-- The camera must be positioned exactly at the same angle as it was during data collection.
-- To overcome the above mentioned problems, a CNN model can be trained, which is the scope of my next project.
+- The Servo motors had jittery motion due to a limited current supply. A SMPS with a higher current rating was used to overcome this problem.
+- Despite all the jumper cables being new, a few had open copper connections hidden under the insulation, and it was difficult to figure out the fault. The connectivity of all the jumper cables was tested, and the faulty cables have been replaced with newer cables.
+- The potentiometers connected to the breadboard had loose connections, and hovering from one potentiometer to another made the Servo motors jitter. To overcome this problem, the program has been modified to use only one potentiometer at a time.
+- With a limited dataset, training the deep learning model was difficult. After lots of iterations, the best architecture was created, and the hyperparameters were tuned to achieve the best accuracy.
 
-### 10. Conclusion:
-A prebuilt human pose estimation model is chosen based on the requirements, and a deep learning model is trained to classify the pose based on the inputs from the prebuilt pose estimation model, which has been successfully deployed using an Arduino microcontroller.
+### 10. Results and Conclusion:
+- The dataset is collected, and a Deep Learning model is trained with the best architecture and hyperparameters for optimal performance.
+- The desired robot joint positions are found using potentiometers, and those values are used for programming in Arduino to reach the goal positions.
+- The Arduino is programmed to receive the classification data from the real-time Python program running on the host computer via the serial interface.
+- The overall prototype performed well with minor communication issues between the host machine and the Arduino, which can be rectified programmatically.
 
 ### 11. References:
-1. Artacho B, Savakis A (2020) UniPose—unified human pose estimation in single images and videos
-2. Wei S-E, Ramakrishna V, Kanade T, Sheikh Y (2016) Convolutional pose machines. The Robotics Institute Carnegie Mellon University
-3. Cao Z, Hidalgo G, Simon T, Wei S-E, Sheikh Y (2018) OpenPose—realtime multi-person 2D pose estimation using part affinity fields
-4. Groos D, Ramampiaro H, Ihlen EAF (2020) EfficientPose—scalable single-person pose estimation
-5. Zhang H (2019) A study on human pose data anomaly detection
-6. Penmetsa S, Minhuj F, Singh A, Omkar SN (2014) Autonomous UAV for suspicious action detection using pictorial human pose estimation and classification
-7. Ichihara K, Takeuchi M, Katto J (2020) Accuracy evaluations of video anomaly detection using human pose estimation. In: IEEE ınternational conference on consumer electronics (ICCE)
-8. https://google.github.io/mediapipe/solutions/pose.html
+1. https://www.youtube.com/watch?v=bal2STaoQ1M
 
 
 
