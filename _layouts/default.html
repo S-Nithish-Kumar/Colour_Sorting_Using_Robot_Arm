@@ -68,7 +68,30 @@
     zoom: 1.1;
     transform-origin: 0 0;
   }
-    
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}    
   </style>
   <head>
     <meta charset="utf-8">
@@ -96,8 +119,8 @@
           {% endif %}          
         </ul>
         <p>
-        <button class="button button_effect" onclick="document.location='https://s-nithish-kumar.github.io/Biofeedback_device_for_speech_modulation/#contents'"><img src="images/contents_image.png" height="12%" width="12%" align="left">View Contents</button>
-        <button class="button button_effect" onclick="document.location='https://github.com/S-Nithish-Kumar/Biofeedback_device_for_speech_modulation'"><img src="images/octocat_small.png" height="10%" width="10%" align="left">View on GitHub</button> 
+        <button class="button button_effect" onclick="document.location='https://github.com/S-Nithish-Kumar/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#contents'"><img src="images/contents_image.png" height="12%" width="12%" align="left">View Contents</button>
+        <button class="button button_effect" onclick="document.location='https://github.com/S-Nithish-Kumar/Colour_Sorting_with_Robot_Arm_using_Deep_Learning'"><img src="images/octocat_small.png" height="10%" width="10%" align="left">View on GitHub</button> 
         </p>  
 
         {% if site.github.is_project_page %}
@@ -117,10 +140,6 @@
         {{ content }}
         </div>
       </section>
-
-      <footer>
-        <p align="left"><small>ASU student project done in collaboration with the Barrow Neurological Institute</small></p>
-      </footer>
       
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
