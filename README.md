@@ -41,11 +41,11 @@ The picture below shows the conceptual design of the project. Waste products pla
 <img src="images/categories.JPG" height="30%" width="30%">
 </p>
 
-<table style="width:90%" align="center">
+<table style="width:100%" align="center">
   <tr>
-    <th>Background class</th>
-    <th>Green class</th>
-    <th>Orange class</th>
+    <th align="center">Background class</th>
+    <th align="center">Green class</th>
+    <th align="center">Orange class</th>
   </tr>
   <tr>
     <td align="center"><img src="images/sample_background_class.jpg" height="80%" width="80%"></td>
