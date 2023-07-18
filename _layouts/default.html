@@ -68,6 +68,10 @@
     zoom: 1.1;
     transform-origin: 0 0;
   }
+    
+  * {
+    box-sizing: border-box;
+  }
   .column {
     float: left;
     width: 33.33%;
@@ -79,6 +83,12 @@
     content: "";
     clear: both;
     display: table;
+  }
+
+  @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
   }
   </style>
   <head>
