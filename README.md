@@ -41,10 +41,18 @@ The picture below shows the conceptual design of the project. Waste products pla
 <img src="images/categories.JPG" height="30%" width="30%">
 </p>
 
-
-| Background class | Green class | Orange class |
-| :--------------: | :---------: | :----------: |
-| ![](images/sample_background_class.jpg) | ![](images/sample_green_class.jpg) | ![](images/sample_orange_class.jpg) |
+<table style="width:90%" align="center">
+  <tr>
+    <th>Background class</th>
+    <th>Green class</th>
+    <th>Orange class</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/sample_background_class.jpg" height="80%" width="80%"></td>
+    <td align="center"><img src="images/sample_green_class.jpg" height="80%" width="80%"></td>
+    <td align="center"><img src="images/sample_orange_class.jpg" height="80%" width="80%"></td>
+  </tr>
+</table>
 
 
 - Noisy and distorted images were removed, and all the images were renamed using numbers in an orderly fashion.
