@@ -8,7 +8,6 @@
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#6-model-training">Model Training</a></li>
   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#7-model-testing-and-validation">Model Testing and Validation</a></li>
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#8-implementation">Implementation</a></li>
-   <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#9-testing-and-validation">Testing and Validation</a></li>
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#9-problems-and-troubleshooting">Problems and Troubleshooting</a></li>
    <li><a href="https://s-nithish-kumar.github.io/Colour_Sorting_with_Robot_Arm_using_Deep_Learning/#10-results-and-conclusion">Results and Conclusion</a></li>
    <li><a href="https://s-nithish-kumar.github.ioColour_Sorting_with_Robot_Arm_using_Deep_Learning/11-references">References</a></li>
@@ -31,7 +30,7 @@
 The picture below shows the conceptual design of the project. Waste products placed on the conveyor belt move slowly. Multiple robots can be placed based on the quantity of waste that has to be segregated. For each robot, there will be a camera that classifies the type of waste. Once classified, the robot will pick up the waste and dispose of it in the appropriate trash can.
 
 <p align="center">
-<img src="images/conceptual_design.jpg" height="40%" width="40%">
+<img src="images/conceptual_design.jpg" height="80%" width="80%">
 </p>
 
 ### 5. Data Collection and Preprocessing:
@@ -44,26 +43,20 @@ The picture below shows the conceptual design of the project. Waste products pla
 
 <div class="row">
   <div class="column">
-    <p align="center">
     <img src="images/sample_background_class.jpg" height="30%" width="30%">
-    </p>
   </div>
   <div class="column">
-    <p align="center">
     <img src="images/sample_green_class.jpg" height="30%" width="30%">
-    </p>
   </div>
   <div class="column">
-    <p align="center">
     <img src="images/sample_orange_class.jpg" height="30%" width="30%">
-    </p>
   </div>
 </div>
 
 - Noisy and distorted images were removed, and all the images were renamed using numbers in an orderly fashion.
 - The dataset is generated using the Tensorflow ImageDataGenerator for both the training and validation sets. The images are normalized with a rescale value of 1/255, and the fill_mode is set to nearest, which fills the boundaries outside the input using the boundary pixel values of the image. Other parameters of ImageDataGenerator are not modified so that the images are not highly augmented.
 
-### 6. Model Training and Validation:
+### 6. Model Training:
 - A Deep Learning Architecture with four convolution layers each, followed by a MaxPool layer, two dense layers each with a dropout layer, and finally an output layer with three nodes is created.
 - The output layer uses the Softmax activation function, and the other layers use the ReLu (Rectified Linear Unit) activation function.
 - Adaptive Moment Estimation is used for optimization, and categorical cross entropy is used for computing the cost of the model.
@@ -72,18 +65,18 @@ The picture below shows the conceptual design of the project. Waste products pla
 + The model started to overfit in the fourth epoch and was eliminated for deployment. In the third epoch, the model's accuracy with the training set is 98.33 percent, and the validation set is 96 percent, which is used for deployment.
 
 <p align="center">
-<img src="images/training_and_validation_accuracy.png" height="40%" width="40%">
+<img src="images/training_and_validation_accuracy.png" height="80%" width="80%">
 </p>
 
 ### 7. Model Testing and Validation:
 - The model is evaluated using the validation set generated using Tensorflow ImageDataGenerator and the test set, which is a raw version of the validation set.
 
 <p align="center">
-<img src="images/validation_set_confusion_matrix.JPG" height="40%" width="40%">
+<img src="images/validation_set_confusion_matrix.JPG" height="70%" width="70%">
 </p>
 
 <p align="center">
-<img src="images/test_set_confusion_matrix.JPG" height="40%" width="40%">
+<img src="images/test_set_confusion_matrix.JPG" height="70%" width="70%">
 </p>
 
 - Clearly, from the confusion matrices, the test set is found to have better results compared to its slighted augmented version (validation set), and this is attributed to the size of the dataset being small.
@@ -91,7 +84,7 @@ The picture below shows the conceptual design of the project. Waste products pla
 ### 8. Implementation:
 
 <p align="center">
-<img src="images/circuit_diagram.png" height="40%" width="40%">
+<img src="images/circuit_diagram.png" height="90%" width="90%">
 </p>
 
 - Circuit connections are given as per the diagram shown above. Potentiometers are used for controlling the servo motors to find the position values of the servo motors, which will be used for automating the robot.
