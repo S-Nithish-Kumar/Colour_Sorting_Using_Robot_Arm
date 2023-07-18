@@ -39,23 +39,23 @@ The picture below shows the conceptual design of the project. Waste products pla
 - A total of 900 images were collected for three classes, with 300 images for each of the classes. For each category, 100 images were collected for testing and validation.
 
 <p align="center">
-<img src="images/categories.JPG" height="40%" width="40%">
+<img src="images/categories.JPG" height="30%" width="30%">
 </p>
 
 <div class="row">
   <div class="column">
     <p align="center">
-    <img src="images/sample_background_class.jpg" height="90%" width="90%">
+    <img src="images/sample_background_class.jpg" height="30%" width="30%">
     </p>
   </div>
   <div class="column">
     <p align="center">
-    <img src="images/sample_green_class.jpg" height="90%" width="90%">
+    <img src="images/sample_green_class.jpg" height="30%" width="30%">
     </p>
   </div>
   <div class="column">
     <p align="center">
-    <img src="images/sample_orange_class.jpg" height="90%" width="90%">
+    <img src="images/sample_orange_class.jpg" height="30%" width="30%">
     </p>
   </div>
 </div>
