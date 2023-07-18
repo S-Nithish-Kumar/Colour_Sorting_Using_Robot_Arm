@@ -48,9 +48,9 @@ The picture below shows the conceptual design of the project. Waste products pla
     <th align="center">Orange class</th>
   </tr>
   <tr>
-    <td align="center"><img src="images/sample_background_class.jpg" height="80%" width="80%"></td>
-    <td align="center"><img src="images/sample_green_class.jpg" height="80%" width="80%"></td>
-    <td align="center"><img src="images/sample_orange_class.jpg" height="80%" width="80%"></td>
+    <td align="center"><img src="images/sample_background_class.jpg" height="70%" width="70%"></td>
+    <td align="center"><img src="images/sample_green_class.jpg" height="70%" width="70%"></td>
+    <td align="center"><img src="images/sample_orange_class.jpg" height="70%" width="70%"></td>
   </tr>
 </table>
 
