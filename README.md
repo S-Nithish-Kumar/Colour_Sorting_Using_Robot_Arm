@@ -41,14 +41,14 @@ The picture below shows the conceptual design of the project. Waste products pla
 <img src="images/categories.JPG" height="30%" width="30%">
 </p>
 
-<div class="row">
-  <div class="column">
+<div class="container">
+  <div class="image">
     <img src="images/sample_background_class.jpg" height="30%" width="30%">
   </div>
-  <div class="column">
+  <div class="image">
     <img src="images/sample_green_class.jpg" height="30%" width="30%">
   </div>
-  <div class="column">
+  <div class="image">
     <img src="images/sample_orange_class.jpg" height="30%" width="30%">
   </div>
 </div>
