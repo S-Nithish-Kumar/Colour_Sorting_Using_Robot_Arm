@@ -42,9 +42,17 @@ The picture below shows the conceptual design of the project. Waste products pla
 <img src="images/categories.JPG" height="40%" width="40%">
 </p>
 
-<p align="center">
-<img src="images/isometric_view.jpg" height="40%" width="40%">
-</p>
+<div class="row">
+  <div class="column">
+    <img src="images/sample_background_class.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/sample_green_class.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/sample_orange_class.jpg" style="width:100%">
+  </div>
+</div>
 
 - Noisy and distorted images were removed, and all the images were renamed using numbers in an orderly fashion.
 - The dataset is generated using the Tensorflow ImageDataGenerator for both the training and validation sets. The images are normalized with a rescale value of 1/255, and the fill_mode is set to nearest, which fills the boundaries outside the input using the boundary pixel values of the image. Other parameters of ImageDataGenerator are not modified so that the images are not highly augmented.
